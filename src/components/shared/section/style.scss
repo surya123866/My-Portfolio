@@ -3,9 +3,10 @@
 
 .section {
   padding: 50px 0;
-  position: relative;
+  position:relative;
   display: flex;
   justify-content: center;
+  
   @include small-screen {
     padding: 100px 0;
   }

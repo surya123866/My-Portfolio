@@ -1,0 +1,265 @@
+.intro-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .intro-content {
+    padding-top: 0;
+    align-items: flex-end;
+  }
+}
+.intro-content .layout {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1024px) {
+  .intro-content .layout {
+    flex-direction: row;
+  }
+}
+.intro-content .layout .left-col {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .intro-content .layout .left-col {
+    width: 45%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .intro-content .layout .left-col {
+    padding-top: 55px;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  .intro-content .layout .left-col {
+    padding-top: 0;
+    width: 37%;
+  }
+}
+.intro-content .layout .left-col .title {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  .intro-content .layout .left-col .title {
+    text-align: left;
+  }
+}
+.intro-content .layout .left-col .title .small-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .intro-content .layout .left-col .title .small-text {
+    justify-content: flex-start;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
+.intro-content .layout .left-col .title .small-text .icon {
+  margin-left: 10px;
+}
+.intro-content .layout .left-col .title .big-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 52px;
+}
+@media only screen and (min-width: 768px) {
+  .intro-content .layout .left-col .title .big-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 72px;
+  }
+}
+.intro-content .layout .left-col p {
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 16px 0;
+  padding: 0 15px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .intro-content .layout .left-col p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 25px 0;
+    padding: 0;
+    text-align: left;
+  }
+}
+.intro-content .layout .left-col .call-to-action {
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .intro-content .layout .left-col .call-to-action {
+    margin: 0;
+  }
+}
+.intro-content .layout .right-col {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  flex-grow: 1;
+  margin-top: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .intro-content .layout .right-col {
+    width: 55%;
+    flex-grow: unset;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  .intro-content .layout .right-col {
+    width: 63%;
+  }
+}
+.intro-content .layout .right-col img {
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .intro-content .layout .right-col img {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  .intro-content .layout .right-col img {
+    margin-bottom: 50px;
+    position: relative;
+    right: -100px;
+  }
+}
+.intro-content .layout .right-col .highlightes {
+  position: absolute;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  transform: scale(0.6);
+}
+@media only screen and (min-width: 768px) {
+  .intro-content .layout .right-col .highlightes {
+    transform: scale(1);
+  }
+}
+.intro-content .layout .right-col .highlightes .icon {
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ffdb44;
+  font-size: 24px;
+  color: #131313;
+}
+.intro-content .layout .right-col .highlightes .text {
+  padding: 0 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #131313;
+}
+.intro-content .layout .right-col .highlightes .text span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.intro-content .layout .right-col .highlightes.horizontal {
+  width: 210px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  top: 115px;
+  left: -30px;
+  padding: 20px 10px 20px 20px;
+}
+@media only screen and (min-width: 768px) {
+  .intro-content .layout .right-col .highlightes.horizontal {
+    top: 250px;
+    left: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .intro-content .layout .right-col .highlightes.horizontal {
+    top: 250px;
+    left: 0;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  .intro-content .layout .right-col .highlightes.horizontal {
+    top: 270px;
+    left: 120px;
+  }
+}
+.intro-content .layout .right-col .highlightes.verticle {
+  width: 145px;
+  height: 190px;
+  min-height: 165px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .intro-content .layout .right-col .highlightes.verticle {
+    top: 50px;
+    right: 60px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .intro-content .layout .right-col .highlightes.verticle {
+    top: 50px;
+    right: 60px;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  .intro-content .layout .right-col .highlightes.verticle {
+    top: 85px;
+    right: -10px;
+  }
+}
+.intro-content .layout .right-col .highlightes.verticle .text {
+  padding: 0 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 10px;
+  color: #131313;
+  margin-top: 10px;
+}
+.intro-content .layout .right-col .highlightes.verticle .text span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  display: block;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+.contact-content-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 25px;
+}
+@media only screen and (min-width: 768px) {
+  .contact-content-info {
+    margin-top: 75px;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=style.css.map */

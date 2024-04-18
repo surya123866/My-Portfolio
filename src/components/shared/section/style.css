@@ -1,0 +1,39 @@
+.section {
+  padding: 50px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 100px 0;
+  }
+}
+.section.dark {
+  background-color: #000;
+}
+.section.light {
+  background-color: #131313;
+}
+.section .content {
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .section .content {
+    width: 1200px;
+  }
+}
+.section .content .section-title {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  max-width: 500px;
+}
+.section .content .section-title h2 {
+  line-height: 45px;
+}/*# sourceMappingURL=style.css.map */

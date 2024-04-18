@@ -1,0 +1,125 @@
+.projects-showcase {
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  overflow: auto;
+  justify-content: center;
+  align-self: center;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+@media only screen and (min-width: 768px) {
+  .projects-showcase {
+    height: 570px;
+    justify-content: unset;
+  }
+}
+.projects-showcase .showcase-item {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@media only screen and (min-width: 768px) {
+  .projects-showcase .showcase-item {
+    width: 265px;
+    height: 265px;
+    border-radius: 16px;
+  }
+}
+.projects-showcase .showcase-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+}
+.projects-showcase .showcase-item .meta-content {
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@media only screen and (min-width: 768px) {
+  .projects-showcase .showcase-item .meta-content {
+    width: -moz-fit-content;
+    width: fit-content;
+    visibility: hidden;
+    opacity: 0;
+    margin-right: 20px;
+    border-radius: 10px;
+    left: 20px;
+    padding: 10px;
+  }
+}
+.projects-showcase .showcase-item .meta-content h3 {
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.projects-showcase .showcase-item .meta-content .go-to-cta {
+  display: flex;
+  align-items: center;
+}
+.projects-showcase .showcase-item .meta-content .go-to-cta .text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px;
+}
+.projects-showcase .showcase-item .meta-content .go-to-cta .arrow-icon {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+.projects-showcase .showcase-item.zoomIn {
+  transform: scale(0);
+  animation: zoomIn 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+.projects-showcase .showcase-item.zoomOut {
+  transform: scale(1);
+  animation: zoomOut 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+@media only screen and (min-width: 768px) {
+  .projects-showcase .showcase-item:hover {
+    z-index: 1;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 33px -8px rgba(0, 0, 0, 0.75);
+  }
+  .projects-showcase .showcase-item:hover .meta-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}/*# sourceMappingURL=style.css.map */

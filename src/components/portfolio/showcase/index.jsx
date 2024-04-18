@@ -4,8 +4,10 @@ import "./style.scss";
 import Arrow from "../../shared/arrow";
 
 const Showcase = ({ data, transition }) => {
+  
   return (
     <div className="projects-showcase">
+    
       {data.map((project) => (
         <div
           className={`showcase-item ${

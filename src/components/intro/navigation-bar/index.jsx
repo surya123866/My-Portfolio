@@ -17,9 +17,9 @@ function Navigation() {
   };
   return (
     <div className="top-navigation-bar">
-      <div className="app-logo">
+      {/* <div className="app-logo">
         <img src={`${logo}`} alt="logo" />
-      </div>
+      </div> */}
       <div className="mobile-menu" onClick={() => setMobileMenu(!mobileMenu)}>
         {mobileMenu ? (
           <IoMdClose size={24} color="#fff" />

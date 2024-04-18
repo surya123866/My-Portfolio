@@ -1,0 +1,35 @@
+.contact-info-box {
+  background-color: #232323;
+  width: 100%;
+  padding: 15px;
+  border-radius: 6px;
+  color: #989898;
+}
+@media only screen and (min-width: 768px) {
+  .contact-info-box {
+    width: 355;
+    padding: 30px;
+  }
+}
+.contact-info-box h4 {
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .contact-info-box h4 {
+    line-height: 34px;
+  }
+}
+.contact-info-box .contact-option {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.contact-info-box .contact-option svg {
+  color: #ffdb44;
+  font-size: 15px;
+}
+.contact-info-box .contact-option .text {
+  color: #fff;
+  margin-left: 15px;
+}/*# sourceMappingURL=style.css.map */

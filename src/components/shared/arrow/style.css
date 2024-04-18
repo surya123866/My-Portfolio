@@ -1,0 +1,19 @@
+.arrow-icon {
+  width: 21px;
+  height: 21px;
+  background: #ffdb44;
+  border-radius: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.arrow-icon svg {
+  transform: rotate(-45deg);
+}
+.arrow-icon:hover:before {
+  transform: translateX(0);
+}
+.arrow-icon:hover .arrow-icon {
+  background-color: #fff;
+}/*# sourceMappingURL=style.css.map */

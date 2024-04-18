@@ -18,9 +18,9 @@ const Footer = () => {
   return (
     <Section background="dark" className="footer">
       <div className="footer-content-wrapper">
-        <div className="footer-logo">
+        {/* <div className="footer-logo">
           <img src={`${Logo}`} alt="footer-logo" />
-        </div>
+        </div> */}
         <ul className="footer-menu-items">
           <li
             className="footer-menu-item"
@@ -34,12 +34,12 @@ const Footer = () => {
           >
             Portfolio
           </li>
-          <li
+          {/* <li
             className="footer-menu-item"
             onClick={() => scrollToSection("blogs")}
           >
             Blog & Articles
-          </li>
+          </li> */}
           <li
             className="footer-menu-item"
             onClick={() => scrollToSection("contact")}
@@ -76,7 +76,8 @@ const Footer = () => {
         </div>
         <div className="bottom-bar">
           <div className="copyright-text">
-            Copyright 2022 Surya Satya Kommanapalli | All Rights Reserved
+            Copyright {new Date().getFullYear()} Surya Satya Kommanapalli | All
+            Rights Reserved
           </div>
         </div>
       </div>

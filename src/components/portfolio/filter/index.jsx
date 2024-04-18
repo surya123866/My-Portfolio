@@ -12,16 +12,20 @@ const filtersData = [
     id: "product",
   },
   {
-    name: "Web Pages",
-    id: "web-page",
+    name: "Front End",
+    id: "front-end",
+  },
+  {
+    name: "Back End",
+    id: "back-end",
   },
   {
     name: "Web Apps",
     id: "web-app",
   },
   {
-    name: "Mobile Apps",
-    id: "mobile-app",
+    name: "Full-Stack",
+    id: "full-stack",
   },
 ];
 

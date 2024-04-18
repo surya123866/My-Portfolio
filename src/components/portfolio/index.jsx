@@ -9,7 +9,7 @@ const projectsData = [
   {
     id: 1,
     name: "Movix App",
-    tags: ["web-app", "web-page"],
+    tags: ["web-app", "front-end", "product"],
     media: {
       thumbnail: require("../../images/portfolio/MovixAppImg.png"),
       link: "https://movix-app-e1f6b.web.app",
@@ -18,16 +18,16 @@ const projectsData = [
   {
     id: 2,
     name: "Portfolio Website",
-    tags: ["web-app", "web-page"],
+    tags: ["web-app", "front-end"],
     media: {
       thumbnail: require("../../images/portfolio/PortfoioImg.png"),
-      link: "",
+      link: "https://myportfolio-dbf4b.web.app",
     },
   },
   {
     id: 3,
     name: "Movies App",
-    tags: ["web-app", "web-page"],
+    tags: ["web-app", "front-end", "product"],
     media: {
       thumbnail: require("../../images/portfolio/MovisAppImg.png"),
       link: "https://suryamoviesapp.ccbp.tech",
@@ -36,7 +36,7 @@ const projectsData = [
   {
     id: 4,
     name: "Jobby App",
-    tags: ["web-app", "mobile-app"],
+    tags: ["web-app", "mobile-app", "product"],
     media: {
       thumbnail: require("../../images/portfolio/JobbyApp.png"),
       link: "https://suryajobbyapp.ccbp.tech",
@@ -45,7 +45,7 @@ const projectsData = [
   {
     id: 5,
     name: "NxtTrendz App",
-    tags: ["web-page"],
+    tags: ["web-app", "front-end", "product"],
     media: {
       thumbnail: require("../../images/portfolio/NxtTrendz.png"),
       link: "https://suryanxttrendz.ccbp.tech/login",
@@ -54,7 +54,7 @@ const projectsData = [
   {
     id: 6,
     name: "Nxt Watch",
-    tags: ["web-page"],
+    tags: ["web-app", "front-end", "product"],
     media: {
       thumbnail: require("../../images/portfolio/nxtWatch.png"),
       link: "https://suryanxtwatch.ccbp.tech/login",
@@ -62,20 +62,47 @@ const projectsData = [
   },
   {
     id: 7,
-    name: "Working on it",
-    tags: ["web-app", "mobile-app"],
+    name: "Green&RedGame",
+    tags: ["web-app", "front-end", "product"],
     media: {
-      thumbnail: require("../../images/portfolio/Mern-Stack-Developer.png"),
-      link: "",
+      thumbnail: require("../../images/portfolio/GreenLightRedLightGame.png"),
+      link: "https://react-hosting-30a94.web.app",
     },
   },
   {
     id: 8,
-    name: "Working on it",
-    tags: ["web-app", "web-page"],
+    name: "NotInLine",
+    tags: ["web-app", "front-end", "product"],
     media: {
-      thumbnail: require("../../images/portfolio/Mern-Stack-Developer.png"),
-      link: "",
+      thumbnail: require("../../images/portfolio/NotInLine.png"),
+      link: "https://notinline-c0e19.web.app",
+    },
+  },
+  {
+    id: 9,
+    name: "OTP-Authentication",
+    tags: ["web-app", "front-end", "back-end", "full-stack"],
+    media: {
+      thumbnail: require("../../images/portfolio/otp-Authentcation.png"),
+      link: "https://otp-authentication-5847a.web.app",
+    },
+  },
+  {
+    id: 10,
+    name: "JOB-Search",
+    tags: ["web-app", "front-end", "product"],
+    media: {
+      thumbnail: require("../../images/portfolio/JobsSearchingApp.png"),
+      link: "https://jobssearchingapplication.web.app",
+    },
+  },
+  {
+    id: 11,
+    name: "Movies-Voting",
+    tags: ["web-app", "front-end", "product"],
+    media: {
+      thumbnail: require("../../images/portfolio/movies-voting.png"),
+      link: "https://moviesvotingapp.web.app/",
     },
   },
 ];

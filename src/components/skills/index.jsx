@@ -5,7 +5,9 @@ import "./style.scss";
 import Section from "../shared/section";
 import TechIcons from "../../images/tech-icons.png";
 import CallToAction from "../../components/shared/callToAction";
-import Resume from "../../components/download/Resume.pdf";
+import SuryaKommanpalli from "../download/Surya Kommanapalli Resume.pdf";
+import SkillLevels from "./skillLevels";
+
 
 const Skills = () => {
   return (
@@ -27,7 +29,11 @@ const Skills = () => {
             actively seeking opportunities in Full-Stack, Frontend, or Backend
             development and welcome collaboration for innovative solutions.
           </p>
-          <a href={Resume} download="Resume" style={{ textDecoration: "none" }}>
+          <a
+            href={SuryaKommanpalli}
+            download="Surya Kommanapalli Resume"
+            style={{ textDecoration: "none" }}
+          >
             <CallToAction
               text="Download CV"
               icon={<AiOutlineCloudDownload />}
@@ -35,6 +41,7 @@ const Skills = () => {
           </a>
         </div>
       </div>
+      {/* <SkillLevels/> */}
     </Section>
   );
 };
