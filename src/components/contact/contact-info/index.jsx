@@ -14,11 +14,23 @@ const ContactInfo = () => {
       </h4>
       <div className="contact-option">
         <FaPhoneAlt />
-        <span className="text">+91 8465035940</span>
+        <a
+          href="tel:+918465035940"
+          className="text"
+          style={{ textDecoration: "none" }}
+        >
+          +91 8465035940
+        </a>
       </div>
       <div className="contact-option">
         <MdEmail />
-        <span className="text">suryakommanapalli80@gmail.com</span>
+        <a
+          href="mailto:suryakommanapalli80@gmail.com"
+          className="text"
+          style={{ textDecoration: "none" }}
+        >
+          suryakommanapalli80@gmail.com
+        </a>
       </div>
     </div>
   );

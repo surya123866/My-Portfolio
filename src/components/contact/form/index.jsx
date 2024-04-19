@@ -6,6 +6,10 @@ import "react-toastify/dist/ReactToastify.css";
 
 import "./style.scss";
 
+const serviceId = process.env.REACT_APP_SERVICE_ID;
+const templateId = process.env.REACT_APP_TEMPLATE_ID;
+const publicKey = process.env.REACT_APP_PUBLIC_KEY;
+
 const Form = () => {
   const {
     register,
@@ -13,12 +17,48 @@ const Form = () => {
     formState: { errors },
   } = useForm();
 
+  //   const onSubmit = (data) => {
+  //     const {
+  //       from_name,
+  //       Position,
+  //       Organisation_name,
+  //       reply_to,
+  //       phone_number,
+  //       email_subject,
+  //       message,
+  //     } = data;
+
+  //     const emailBody = `Hey Surya,
+
+  // My name is ${from_name}, ${message}
+
+  // Warm regards,
+  // ${from_name}
+  // ${phone_number}
+  // ${Position}
+  // ${Organisation_name}`;
+
+  //     const emailSubject = encodeURIComponent(email_subject);
+  //     const emailUrl = `mailto:suryakommanapalli80@gamil.com?subject=${emailSubject}&body=${encodeURIComponent(
+  //       emailBody
+  //     )}`;
+
+  //     window.location.href = emailUrl;
+
+  //     formSuccess();
+  //   };
+
+  // const formSuccess = () => {
+  //   toast("Thanks for submitting your Query!");
+  //   document.getElementById("queryForm").reset();
+  // };
+
   const onSubmit = (data) => {
     send(
-      "service_c54mzpb", // Service ID
-      "template_axbpgnq", // Template ID
+      serviceId, // Service ID
+      templateId, // Template ID
       data,
-      "7HrAZzAkW1mWOot1F" // Public Key - https://dashboard.emailjs.com/admin/account
+      publicKey // Public Key - https://dashboard.emailjs.com/admin/account
     )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
@@ -31,7 +71,7 @@ const Form = () => {
 
   const formSuccess = () => {
     toast("Thanks for submitting your Query!");
-    document.getElementById("queryForm").reset();
+    // document.getElementById("queryForm").reset();
   };
 
   return (
@@ -49,6 +89,34 @@ const Form = () => {
           />
           {errors.from_name?.message && (
             <p className="error">{errors.from_name?.message}</p>
+          )}
+        </div>
+
+        <div className="input-field">
+          <input
+            type="text"
+            name="position"
+            placeholder="Organisation"
+            {...register("Organisation_name", {
+              required: "Organisation name is required",
+            })}
+          />
+          {errors.from_name?.message && (
+            <p className="error">{errors.Organisation_name?.message}</p>
+          )}
+        </div>
+
+        <div className="input-field">
+          <input
+            type="text"
+            name="position"
+            placeholder="Position"
+            {...register("Position", {
+              required: "Position is required",
+            })}
+          />
+          {errors.from_name?.message && (
+            <p className="error">{errors.Position?.message}</p>
           )}
         </div>
 
@@ -93,7 +161,7 @@ const Form = () => {
             type="text"
             name="subject"
             placeholder="Subject"
-            {...register("subject", {
+            {...register("email_subject", {
               required: "Subject is required",
               minLength: {
                 value: 10,

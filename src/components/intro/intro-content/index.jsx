@@ -22,7 +22,7 @@ function IntroContent() {
       strings: ["Surya Satya Kommanapalli"],
     });
   }, []);
-  
+
   return (
     <div className="intro-content">
       <div className="layout">
@@ -52,30 +52,63 @@ function IntroContent() {
         <div className="right-col">
           {/* <img src={`${GirlImage}`} alt="girl" /> */}
 
-          <div className="highlightes">
-            <div className="icon">
-              <BsAwardFill />
+          <div className="highlightes-container ">
+            <div className="highlightes">
+              <div className="icon">
+                <BsAwardFill />
+              </div>
+              <div className="text">2 + Years of coding Experience</div>
             </div>
-            <div className="text">2 + Years of coding Experience</div>
+            <div className="highlightes">
+              <div className="icon">
+                <FaUser />
+              </div>
+              <div className="text">
+                Ex Automation Tester at{" "}
+                <span>
+                  <a
+                    href="https://www.linkedin.com/company/virtusa/"
+                    style={{ textDecoration: "none", fontWeight: "bold" }}
+                  >
+                    VIRTUSA
+                  </a>
+                </span>
+              </div>
+            </div>
           </div>
-          <div className="highlightes">
-            <div className="icon">
-              <FaUser />
+
+          <div className="highlightes-container ">
+            <div className="highlightes">
+              <div className="icon">
+                <FaUser />
+              </div>
+              <div className="text">
+                Frontend Devloper at{" "}
+                <span>
+                  <a
+                    href="https://www.linkedin.com/company/taxiwars1/"
+                    style={{ textDecoration: "none", fontWeight: "bold" }}
+                  >
+                    TAXIWARS
+                  </a>
+                </span>
+              </div>
             </div>
-            <div className="text">Ex Automation Tester at Virtusa</div>
-          </div>
-          <div className="highlightes">
-            <div className="icon">
-              <FaUser />
-            </div>
-            <div className="text">Frontend Devloper at Taxiwars</div>
-          </div>
-          <div className="highlightes">
-            <div className="icon">
-              <FaUser />
-            </div>
-            <div className="text">
-              Active Volunteer Frontend Contributor at Kaliper
+            <div className="highlightes">
+              <div className="icon">
+                <FaUser />
+              </div>
+              <div className="text">
+                Active Volunteer Frontend Contributor at{" "}
+                <span>
+                  <a
+                    href="https://www.linkedin.com/company/kaliper/"
+                    style={{ textDecoration: "none", fontWeight: "bold" }}
+                  >
+                    KALIPER
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>

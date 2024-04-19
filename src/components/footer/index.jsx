@@ -49,11 +49,6 @@ const Footer = () => {
         </ul>
         <div className="social-icons">
           <SocialIcon
-            color="#FF0000"
-            icon={<FaYoutube />}
-            link="https://www.youtube.com"
-          />
-          <SocialIcon
             color="#0A66c2"
             icon={<FaLinkedin />}
             link="https://www.linkedin.com/in/suryakommanapalli/"
@@ -67,11 +62,6 @@ const Footer = () => {
             color="#f2740d"
             icon={<FaStackOverflow />}
             link="https://www.StackOverFlow.com"
-          />
-          <SocialIcon
-            color="#E84c88"
-            icon={<FaInstagram />}
-            link="https://www.Instagram.com"
           />
         </div>
         <div className="bottom-bar">
